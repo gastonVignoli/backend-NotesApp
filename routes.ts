@@ -1,14 +1,24 @@
-import { ejemploAction, ejemploActionConParametros } from './src/controllers/EjemploController';
+import {EjemploController} from "./src/controllers/EjemploController";
 
 export const AppRoutes = [
     {
         path: '/ejemplo',
         method: 'get',
-        action: ejemploAction
+        action: EjemploController.ejemploAction
     },
     {
         path: '/ejemploParams/:nombre/:apellido',
         method: 'get',
-        action: ejemploActionConParametros,
+        action: EjemploController.ejemploActionConParametros,
+    },
+    {
+        path: '/ejemploQParams',
+        method: 'get',
+        action: EjemploController.ejemploActionConQParametros,
+    },
+    {
+        path: '/ejemploPost',
+        method: 'post',
+        action: EjemploController.ejemploActionPost,
     },
 ];
