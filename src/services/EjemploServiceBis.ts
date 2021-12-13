@@ -1,6 +1,13 @@
 import {PersonaModel} from "../models/PersonaModel";
 import {injectable} from "inversify";
 import {IEjemploService} from "./interfaces/IEjemploService";
+import {getManager} from "typeorm";
+import {Temas} from "../entities/Temas";
+import {publicDecrypt} from "crypto";
+import {obtenerReparticiones} from "../controllers/EjemploController";
+import {Reparticiones} from "../entities/Reparticiones";
+import {TemasModel} from "../models/TemasModel";
+import {plainToClass} from "class-transformer";
 
 
 @injectable()
@@ -21,6 +28,65 @@ export class EjemploServiceBis implements IEjemploService{
     }
     public async ejemploPost(persona: PersonaModel) {
         return `Hola ${persona.nombre} ${persona.apellido} y tengo ${persona.edad}`;
+    }
+    public  async obtenerTemas(): Promise<any> {
+        try {
+            const t: any = await getManager()
+                .createQueryBuilder(Temas, "t")
+                .addSelect("t.idTema", "id")
+                .addSelect("t.nombre", "nobmre")
+                .addSelect("t.descripcion", "descripcion")
+                .addSelect("t.duracion", "duracion")
+                .orderBy("t.idTema", "DESC")
+                .getRawMany();
+            return t;
+        }catch (e) {
+            console.error(e);
+            return null;
+        }
+    }
+
+    public async obtenerReparticiones(): Promise<Reparticiones[]> {
+        try {
+            const reparticionesRepository = await getManager().getRepository(Reparticiones);
+            const p: Reparticiones[]= await reparticionesRepository.find();
+            return p;
+        } catch (e) {
+            console.log(e);
+            return [];
+        }
+    }
+
+    public async obtenerReparticionesPorNombre(nombre: string = "Municipalidad"): Promise<Reparticiones[]> {
+        try {
+            const reparticionesRepository = await getManager().getRepository(Reparticiones);
+            const p: Reparticiones[] = await reparticionesRepository.find({nombre:nombre});
+            return p;
+        } catch (e) {
+            console.log(e);
+            return [];
+        }
+    }
+
+    public async obtenerTemasPorSP(idTema: number): Promise<TemasModel> {
+        try {
+            let resultado: TemasModel;
+                await getManager()
+                .query(`CALL OBT_TEMAS(${idTema})`).then(x => {
+                    let result: TemasModel;
+                    result = plainToClass(TemasModel, x[0], {
+                        excludeExtraneousValues: true
+                    });
+                    console.error(result);
+                    resultado = result;
+                }).catch(e => {
+                    console.log("No se encontraron registros.");
+                });
+            return resultado;
+        } catch (e) {
+            console.error(e)
+            return null;
+        }
     }
 
 

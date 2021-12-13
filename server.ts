@@ -1,9 +1,11 @@
+import "reflect-metadata"
 // @ts-ignore
 import Express, { Request, Response } from 'express';
 // @ts-ignore
 import bodyParser from 'body-parser';
 import 'dotenv/config';
 import { AppRoutes } from './routes';
+import {connectDB} from "./database";
 
 const app = Express();
 
@@ -33,5 +35,6 @@ const startServer = async () => {
 };
 
 (async () => {
+    await connectDB();
     await startServer();
 })();

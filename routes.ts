@@ -1,4 +1,4 @@
-import {EjemploController} from "./src/controllers/EjemploController";
+import {EjemploController, obtenerReparticiones} from "./src/controllers/EjemploController";
 
 export const AppRoutes = [
     {
@@ -20,5 +20,28 @@ export const AppRoutes = [
         path: '/ejemploPost',
         method: 'post',
         action: EjemploController.ejemploActionPost,
+    },
+    {
+        path: '/obtenerTemas',
+        method: 'get',
+        action: EjemploController.obtenerTemas,
+    },
+
+    {
+        path: '/obtenerReparticiones',
+        method: 'get',
+        action: EjemploController.obtenerReparticiones,
+    },
+
+    {
+        path: '/obtenerReparticionesPorNombre',
+        method: 'get',
+        action: EjemploController.obtenerReparticionesPorNombre,
+    },
+
+    {
+        path: '/obtenerTemasPorId/:id',
+        method: 'get',
+        action: EjemploController.obtenerTemasPorSP,
     },
 ];

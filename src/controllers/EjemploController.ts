@@ -45,10 +45,30 @@ export async function ejemploActionPost(request: Request, response: Response) {
     );
 }
 
+export async function obtenerTemas(request: Request, response: Response) {
+    return response.status(200).json(await _ejemploService.obtenerTemas());
+}
+
+export async function obtenerReparticiones(request: Request, response: Response) {
+    return response.status(200).json(await _ejemploService.obtenerReparticiones());
+}
+
+
+export async function obtenerReparticionesPorNombre(request: Request, response: Response) {
+    return response.status(200).json(await _ejemploService.obtenerReparticionesPorNombre());
+}
+
+export async function obtenerTemasPorSP(request: Request, response: Response) {
+    return response.status(200).json(await _ejemploService.obtenerTemasPorSP(+request.params.id));
+}
+
 export const EjemploController = {
     ejemploAction,
     ejemploActionConParametros,
     ejemploActionConQParametros,
     ejemploActionPost,
-
+    obtenerTemas,
+    obtenerReparticiones,
+    obtenerReparticionesPorNombre,
+    obtenerTemasPorSP,
 }
