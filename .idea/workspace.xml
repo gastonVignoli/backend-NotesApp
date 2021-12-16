@@ -19,28 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ormconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Alumnos.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Cargos.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Personas.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Profesores.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Puntajes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Reparticiones.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Temas.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/User.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/TemasModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodemon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/EjemploController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/EjemploController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/EjemploServiceBis.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/EjemploServiceBis.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/interfaces/IEjemploService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/interfaces/IEjemploService.ts" afterDir="false" />
-    </list>
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +114,7 @@
       <workItem from="1639136905286" duration="8408000" />
       <workItem from="1639316882366" duration="1209000" />
       <workItem from="1639343901845" duration="593000" />
-      <workItem from="1639396132648" duration="10092000" />
+      <workItem from="1639396132648" duration="10194000" />
     </task>
     <servers />
   </component>
