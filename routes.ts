@@ -21,6 +21,7 @@ export const AppRoutes = [
         method: 'post',
         action: EjemploController.ejemploActionPost,
     },
+    // Este es el metodo oficial par ael punto 1.
     {
         path: '/obtenerTemas',
         method: 'get',

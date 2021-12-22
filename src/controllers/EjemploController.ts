@@ -46,7 +46,19 @@ export async function ejemploActionPost(request: Request, response: Response) {
 }
 
 export async function obtenerTemas(request: Request, response: Response) {
+    try {
+        let respuesta = await _ejemploService.obtenerTemas();
+        if (respuesta) {
+            return response.status(200).json(respuesta);
+        } else {
+            return response.status(404).json("No se encontraron datos");
+        }
+    } catch(error) {
+        return response.status(409).json(error)
+    }
+/*
     return response.status(200).json(await _ejemploService.obtenerTemas());
+*/
 }
 
 export async function obtenerReparticiones(request: Request, response: Response) {

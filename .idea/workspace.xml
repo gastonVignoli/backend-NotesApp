@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="" />
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/EjemploController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/EjemploController.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +67,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rama Gabi/capacitacion-nodejs" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="G:\OneDrive - frc.utn.edu.ar\CIDS\Desarrollo\capacitacion-nodejs\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -87,7 +91,7 @@
         </option>
       </method>
     </configuration>
-    <configuration name="server.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="dist/server.js" working-dir="$PROJECT_DIR$">
+    <configuration name="server.js" type="NodeJSConfigurationType" path-to-node="node" nameIsGenerated="true" path-to-js-file="dist/server.js" working-dir="$PROJECT_DIR$">
       <method v="2">
         <option name="NpmBeforeRunTask" enabled="true">
           <package-json value="$PROJECT_DIR$/package.json" />
@@ -115,6 +119,8 @@
       <workItem from="1639316882366" duration="1209000" />
       <workItem from="1639343901845" duration="593000" />
       <workItem from="1639396132648" duration="10194000" />
+      <workItem from="1639687880191" duration="100000" />
+      <workItem from="1640174007807" duration="2093000" />
     </task>
     <servers />
   </component>
