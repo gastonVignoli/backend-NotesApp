@@ -19,8 +19,33 @@ export async function obtenerAlumnos(request: Request, response: Response) {
     }
 }
 
+    export async function obtenerAlumnoCuil(request: Request, response: Response) {
+        try {
+            let respuesta = await _alumnoSevice.obtenerAlumnoCuil(+request.params.cuil);
+            if (respuesta) {
+                return response.status(200).json(respuesta);
+            } else {
+                return response.status(404).json("No se encontraron datos");
+            }
+        } catch (error) {
+            return response.status(409).json(error)
+        }
+    }
 
-export const AlumnoController = {
-    obtenerAlumnos,
+
+export async function crearAlumno(request: Request, response: Response) {
+    try {
+        let respuesta = await _alumnoSevice.crearAlumno(request.body);
+        return response.status(200).json(respuesta);
+
+    } catch (error) {
+        return response.status(409).json(error)
+    }
 }
+
+        export const AlumnoController = {
+            obtenerAlumnos,
+            obtenerAlumnoCuil,
+            crearAlumno,
+        }
 

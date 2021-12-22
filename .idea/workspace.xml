@@ -20,17 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/AlumnoController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/AlumnoModel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/AlumnoService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/interfaces/IAlumnoService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/TemasController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/TemasController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/TemasModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/TemasModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/inversify.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/inversify.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/types/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/AlumnoController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AlumnoController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/AlumnoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AlumnoService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/interfaces/IAlumnoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/interfaces/IAlumnoService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +72,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rama Gabi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rama Gabi/capacitacion-nodejs" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="G:\OneDrive - frc.utn.edu.ar\CIDS\Desarrollo\capacitacion-nodejs\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -133,7 +127,8 @@
       <workItem from="1639687880191" duration="100000" />
       <workItem from="1640174007807" duration="8038000" />
       <workItem from="1640182403322" duration="807000" />
-      <workItem from="1640184683501" duration="4674000" />
+      <workItem from="1640184683501" duration="4760000" />
+      <workItem from="1640191801817" duration="7077000" />
     </task>
     <servers />
   </component>

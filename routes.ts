@@ -42,7 +42,21 @@ export const AppRoutes = [
         method: 'get',
         action: AlumnoController.obtenerAlumnos,
     },
+// Este es el metodo oficial par ael punto 4. ---------------
 
+    {
+        path: '/obtenerAlumnoCuil/:cuil',
+        method: 'get',
+        action: AlumnoController.obtenerAlumnoCuil,
+    },
+// Este es el metodo oficial par ael punto 5. ---------------
+
+
+    {
+        path: '/crearAlumno',
+        method: 'get',
+        action: AlumnoController.crearAlumno,
+    },
     {
         path: '/obtenerReparticiones',
         method: 'get',
