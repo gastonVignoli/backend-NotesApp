@@ -1,4 +1,5 @@
 import {EjemploController, obtenerReparticiones} from "./src/controllers/EjemploController";
+import {TemasController} from "./src/controllers/TemasController";
 
 export const AppRoutes = [
     {
@@ -21,11 +22,11 @@ export const AppRoutes = [
         method: 'post',
         action: EjemploController.ejemploActionPost,
     },
-    // Este es el metodo oficial par ael punto 1.
+    // Este es el metodo oficial par ael punto 1. ---------------
     {
         path: '/obtenerTemas',
         method: 'get',
-        action: EjemploController.obtenerTemas,
+        action: TemasController.obtenerTemas,
     },
 
     {
@@ -44,5 +45,11 @@ export const AppRoutes = [
         path: '/obtenerTemasPorId/:id',
         method: 'get',
         action: EjemploController.obtenerTemasPorSP,
+    },
+
+    {
+        path: '/ejemploParams/:idTema',
+        method: 'get',
+        action: EjemploController.ejemploActionConParametros,
     },
 ];
