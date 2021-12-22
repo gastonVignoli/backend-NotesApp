@@ -10,7 +10,7 @@ export class TemasModel {
     @Expose({name: "descripcion"})
     descripcion: string | null;
 
-    @Expose({name: "duraicon"})
+    @Expose({name: "duracion"})
     duracion: string | null;
 
 

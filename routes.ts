@@ -1,5 +1,6 @@
 import {EjemploController, obtenerReparticiones} from "./src/controllers/EjemploController";
 import {TemasController} from "./src/controllers/TemasController";
+import {AlumnoController} from "./src/controllers/AlumnoController";
 
 export const AppRoutes = [
     {
@@ -28,6 +29,19 @@ export const AppRoutes = [
         method: 'get',
         action: TemasController.obtenerTemas,
     },
+// Este es el metodo oficial par ael punto 2. ---------------
+    {
+        path: '/obtenerTemasPorId/:id',
+        method: 'get',
+        action: TemasController.obtenerTemasPorSP,
+    },
+// Este es el metodo oficial par ael punto 3. ---------------
+
+    {
+        path: '/obtenerAlumnos',
+        method: 'get',
+        action: AlumnoController.obtenerAlumnos,
+    },
 
     {
         path: '/obtenerReparticiones',
@@ -39,12 +53,6 @@ export const AppRoutes = [
         path: '/obtenerReparticionesPorNombre',
         method: 'get',
         action: EjemploController.obtenerReparticionesPorNombre,
-    },
-
-    {
-        path: '/obtenerTemasPorId/:id',
-        method: 'get',
-        action: EjemploController.obtenerTemasPorSP,
     },
 
     {
