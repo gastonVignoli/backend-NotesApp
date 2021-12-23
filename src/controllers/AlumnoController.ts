@@ -1,8 +1,13 @@
-// @ts-ignore
 import {Request, Response} from 'express';
 import {AlumnoService} from "../services/AlumnoService";
 import container from "../services/inversify.config";
 import EjemploTypes from "../services/types/types";
+import HttpStatusCode from "../enums/HttpStatusCode";
+import {ReplSet} from "typeorm";
+import * as http from "http";
+
+
+
 
 let _alumnoSevice = container.get<AlumnoService>(EjemploTypes.Alumno)
 
@@ -10,12 +15,12 @@ export async function obtenerAlumnos(request: Request, response: Response) {
     try {
         let respuesta = await _alumnoSevice.obtenerAlumnos();
         if (respuesta) {
-            return response.status(200).json(respuesta);
+            return response.status(HttpStatusCode.OK).json(respuesta);
         } else {
-            return response.status(404).json("No se encontraron datos");
+            return response.status(HttpStatusCode.NOT_FOUND).json("No se encontraron datos");
         }
     } catch (error) {
-        return response.status(409).json(error)
+        return response.status(HttpStatusCode.CONFLICT).json(error)
     }
 }
 
@@ -24,23 +29,22 @@ export async function obtenerAlumnos(request: Request, response: Response) {
             let respuesta = await _alumnoSevice.obtenerAlumnoCuil(+request.params.cuil);
             console.log(respuesta)
             if (respuesta.length > 0) {
-                return response.status(200).json(respuesta);
+                return response.status(HttpStatusCode.OK).json(respuesta);
             } else {
-                return response.status(404).json("No se encontraron datos");
+                return response.status(HttpStatusCode.NOT_FOUND).json("No se encontraron datos");
             }
         } catch (error) {
-            return response.status(409).json(error)
+            return response.status(HttpStatusCode.CONFLICT).json(error)
         }
     }
 
 
 export async function crearAlumno(request: Request, response: Response) {
-    try {
-        let respuesta = await _alumnoSevice.crearAlumno(request.body);
-        return response.status(200).json(respuesta);
-
-    } catch (error) {
-        return response.status(409).json(error)
+    try{
+        let body = request.body;
+        return response.status(HttpStatusCode.OK).json(await _alumnoSevice.crearAlumno(body))
+    }catch (e) {
+        return response.sendStatus(HttpStatusCode.CONFLICT);
     }
 }
 

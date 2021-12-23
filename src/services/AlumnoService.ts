@@ -5,6 +5,8 @@ import {plainToClass} from "class-transformer";
 import {Alumnos} from "../entities/Alumnos";
 import {Temas} from "../entities/Temas";
 import {AlumnoModel} from "../models/AlumnoModel";
+import {Personas} from "../entities/Personas";
+import {Reparticiones} from "../entities/Reparticiones";
 
 
 @injectable()
@@ -47,8 +49,34 @@ export class AlumnoService implements IAlumnoService {
             return null;
         }
     }
-    public async crearAlumno(alumno: AlumnoModel) {
+
+
+    public async crearAlumno(body: any): Promise<any>{
+        try{
+            let alumno: Alumnos = new Alumnos();
+            let persona: Personas = new Personas();
+            let reparticion: Reparticiones = await  this.obtenerReparticionesPorNombre(body.reparticion);
+            persona.nombre = body.nombre;
+            persona.apellido = body.apellido;
+            persona.edad = body.edad;
+            persona.cuil = body.cuil;
+            alumno.idReparticion2 = reparticion;
+            await getManager().transaction(async (transactionalEntityManager) => {
+                await transactionalEntityManager.save(persona);
+                alumno.idPersona2 = persona;
+                await transactionalEntityManager.save(alumno);
+                console.log(alumno);
+            });
+            return true;
+        }catch (e) {
+            console.error(e);
+            return false;
+        }
 
     }
 
+    private async obtenerReparticionesPorNombre(nombre: string): Promise<any>{
+        let repositoryReparticiones = getManager().getRepository(Reparticiones);
+        return repositoryReparticiones.findOne({nombre: nombre});
+    }
 }

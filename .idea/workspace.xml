@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="&quot;prueba commit desde WS&quot;">
+      <change afterPath="$PROJECT_DIR$/src/enums/HttpStatusCode.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/AlumnoController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AlumnoController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/AlumnoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AlumnoService.ts" afterDir="false" />
     </list>
@@ -71,13 +73,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="G:\OneDrive - frc.utn.edu.ar\CIDS\Desarrollo\capacitacion-nodejs\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\OneDrive - frc.utn.edu.ar\CIDS\Desarrollo\capacitacion-nodejs\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\OneDrive - frc.utn.edu.ar\CIDS\Desarrollo\capacitacion-nodejs\src" />
     </key>
@@ -134,8 +139,16 @@
       <workItem from="1640209294325" duration="182000" />
       <workItem from="1640209517673" duration="2439000" />
       <workItem from="1640259421847" duration="2283000" />
-      <workItem from="1640261850861" duration="1284000" />
+      <workItem from="1640261850861" duration="6739000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;prueba commit desde WS&quot;">
+      <created>1640263188879</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640263188879</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,5 +164,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;prueba commit desde WS&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;prueba commit desde WS&quot;" />
   </component>
 </project>
