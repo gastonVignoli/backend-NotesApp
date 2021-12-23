@@ -24,12 +24,12 @@ export class AlumnoService implements IAlumnoService {
         }
     }
 
-    public async obtenerAlumnoCuil(cuil: number): Promise<AlumnoModel> {
+    public async obtenerAlumnoCuil(cuil: number): Promise<any> {
         try {
             console.log(cuil)
             let resultado: AlumnoModel;
             await getManager()
-                /*Este SP es artesanal hecho solo para este metodo, VLI por "Vignoli" */
+                /*Este SP es artesanal hecho solo para este metodo, "VLI" por Vignoli */
                 .query(`CALL VLI_ALUMNOSXCUIL(${cuil})`).then(x => {
                     let result: AlumnoModel;
                     result = plainToClass(AlumnoModel, x[0], {

@@ -22,7 +22,8 @@ export async function obtenerAlumnos(request: Request, response: Response) {
     export async function obtenerAlumnoCuil(request: Request, response: Response) {
         try {
             let respuesta = await _alumnoSevice.obtenerAlumnoCuil(+request.params.cuil);
-            if (respuesta) {
+            console.log(respuesta)
+            if (respuesta.length > 0) {
                 return response.status(200).json(respuesta);
             } else {
                 return response.status(404).json("No se encontraron datos");
