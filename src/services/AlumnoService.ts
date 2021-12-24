@@ -31,7 +31,7 @@ export class AlumnoService implements IAlumnoService {
             console.log(cuil)
             let resultado: AlumnoModel;
             await getManager()
-                /*Este SP es artesanal hecho solo para este metodo, "VLI" por Vignoli */
+                /* Este SP fue hecho de manera artesanal solo para este método, "VLI" por Vignoli */
                 .query(`CALL VLI_ALUMNOSXCUIL(${cuil})`).then(x => {
                     let result: AlumnoModel;
                     result = plainToClass(AlumnoModel, x[0], {
@@ -72,7 +72,6 @@ export class AlumnoService implements IAlumnoService {
             console.error(e);
             return false;
         }
-
     }
 
     public async eliminarAlumno(cuil: string): Promise<any> {

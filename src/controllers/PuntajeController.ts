@@ -11,10 +11,29 @@ import * as http from "http";
 
 let _puntajeSevice = container.get<PuntajeService>(EjemploTypes.Puntaje)
 
+    export async function registrarPuntaje(request: Request, response: Response) {
+        try {
+            let cuerpo = request.body
+            return response.status(HttpStatusCode.OK).json(await _puntajeSevice.registrarPuntaje(cuerpo))
+        } catch (e) {
+            return response.sendStatus(HttpStatusCode.CONFLICT);
+        }
+    }
+
+    export async function modificarPuntaje(request: Request, response: Response) {
+        try {
+            let cuerpo = request.body
+            return response.status(HttpStatusCode.OK).json(await _puntajeSevice.modificarPuntaje(cuerpo))
+        } catch (e) {
+            return response.sendStatus(HttpStatusCode.CONFLICT);
+        }
+    }
 
 
 
-export const AlumnoController = {
+export const PuntajeController = {
 
+    registrarPuntaje,
+    modificarPuntaje
 }
 

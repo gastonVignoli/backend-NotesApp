@@ -1,6 +1,7 @@
 import {EjemploController, obtenerReparticiones} from "./src/controllers/EjemploController";
 import {TemasController} from "./src/controllers/TemasController";
 import {AlumnoController} from "./src/controllers/AlumnoController";
+import {modificarPuntaje, PuntajeController} from "./src/controllers/PuntajeController";
 
 export const AppRoutes = [
     {
@@ -57,7 +58,7 @@ export const AppRoutes = [
         action: AlumnoController.crearAlumno,
     },
 // (no hay punto 5)
-// Este es la ruta oficial para el punto 6. ---------------
+// Este es la ruta oficial para el punto 7. ---------------
 
     {
         path: '/eliminarAlumno/:cuil',
@@ -65,12 +66,26 @@ export const AppRoutes = [
         action: AlumnoController.eliminarAlumno,
     },
 
- // Este es la ruta oficial para el punto 7.---------------
+ // Este es la ruta oficial para el punto 8.---------------
 
     {
         path: '/modificarAlumno/:cuil',
         method: 'post',
         action: AlumnoController.modificarAlumno,
+    },
+ // Este es la ruta oficial para el punto 9.---------------
+
+    {
+        path: '/registrarPuntaje',
+        method: 'post',
+        action: PuntajeController.registrarPuntaje,
+    },
+// Este es la ruta oficial para el punto 10.---------------
+
+    {
+        path: '/modificarPuntaje',
+        method: 'post',
+        action: PuntajeController.modificarPuntaje,
     },
 
     {

@@ -19,12 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="&quot;Puntaje model listo&quot;">
-      <change afterPath="$PROJECT_DIR$/src/controllers/PuntajeController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/PuntajeService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/interfaces/IPuntajeService.ts" afterDir="false" />
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="Interfaz, controller y service de Puntaje">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/PuntajeModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/PuntajeModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/PuntajeController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/PuntajeController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/AlumnoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AlumnoService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/PuntajeService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PuntajeService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/interfaces/IPuntajeService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/interfaces/IPuntajeService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/inversify.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/inversify.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +76,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rama Gabi/capacitacion-nodejs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="G:\OneDrive - frc.utn.edu.ar\CIDS\Desarrollo\capacitacion-nodejs\node_modules\typescript\lib" />
@@ -142,7 +146,8 @@
       <workItem from="1640261850861" duration="6861000" />
       <workItem from="1640283131916" duration="61000" />
       <workItem from="1640348550204" duration="2958000" />
-      <workItem from="1640352103626" duration="3333000" />
+      <workItem from="1640352103626" duration="3632000" />
+      <workItem from="1640366066009" duration="5422000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;prueba commit desde WS&quot;">
       <created>1640263188879</created>
@@ -172,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640356788350</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Interfaz, controller y service de Puntaje">
+      <created>1640357150765</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640357150765</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +206,7 @@
     <MESSAGE value="&quot;crear alumno listo&quot;" />
     <MESSAGE value="&quot;Puntos 8 y 9 listos para testing&quot;" />
     <MESSAGE value="&quot;Puntaje model listo&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Puntaje model listo&quot;" />
+    <MESSAGE value="Interfaz, controller y service de Puntaje" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interfaz, controller y service de Puntaje" />
   </component>
 </project>
