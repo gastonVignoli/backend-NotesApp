@@ -1,6 +1,6 @@
 import {injectable} from 'inversify';
 import {IAlumnoService} from "./interfaces/IAlumnoService";
-import {getManager} from "typeorm";
+import {createQueryBuilder, getManager} from "typeorm";
 import {plainToClass} from "class-transformer";
 import {Alumnos} from "../entities/Alumnos";
 import {Temas} from "../entities/Temas";
@@ -55,7 +55,7 @@ export class AlumnoService implements IAlumnoService {
         try{
             let alumno: Alumnos = new Alumnos();
             let persona: Personas = new Personas();
-            let reparticion: Reparticiones = await  this.obtenerReparticionesPorNombre(body.reparticion);
+            let reparticion: Reparticiones = await  this.reparticionesPorNombre(body.reparticion);
             persona.nombre = body.nombre;
             persona.apellido = body.apellido;
             persona.edad = body.edad;
@@ -75,8 +75,65 @@ export class AlumnoService implements IAlumnoService {
 
     }
 
-    private async obtenerReparticionesPorNombre(nombre: string): Promise<any>{
+    public async eliminarAlumno(cuil: string): Promise<any> {
+        try{
+            let idPersona: number = await this.obtenerIdPersona(cuil);
+            console.log(`el id de esa persona es: ${idPersona}` )
+
+            await getManager().transaction(async (transactionalEntityManager) => {
+                //elimino alumno
+                await transactionalEntityManager.createQueryBuilder()
+                    .delete()
+                    .from(Alumnos)
+                    .where(`id_persona = ${idPersona}`)
+                    .execute();
+                //elimino persona
+                await transactionalEntityManager.createQueryBuilder()
+                    .delete()
+                    .from(Personas)
+                    .where(`id_persona = ${idPersona}`)
+                    .execute();
+            });
+            return true;
+        }catch (e){
+            console.error(e);
+            return false;
+        }
+    }
+
+    public async modificarAlumno(cuil: string, body: any): Promise<any> {
+        try{
+            let idPersona: number = await this.obtenerIdPersona(cuil);
+
+            await getManager().transaction(async (transactionalEntityManager)=>{
+                await transactionalEntityManager.createQueryBuilder()
+                    .update(Personas)
+                    .set({nombre: body.nombre, apellido: body.apellido, edad: body.edad})
+                    .where(`id_persona = ${idPersona}`)
+                    .execute();
+                await transactionalEntityManager.createQueryBuilder()
+                    .update(Alumnos)
+                    .set({idReparticion2: body.reparticion})
+                    .where(`id_persona = ${idPersona}`)
+                    .execute();
+            });
+            return true;
+        }catch (e) {
+            console.error(e);
+            return false;
+        }
+    }
+
+    private async reparticionesPorNombre(nombre: string): Promise<any>{
         let repositoryReparticiones = getManager().getRepository(Reparticiones);
         return repositoryReparticiones.findOne({nombre: nombre});
     }
+    private async obtenerIdPersona(cuil: string): Promise<number>{
+        let persona: Personas[] = await getManager().getRepository(Personas)
+            .find({cuil: cuil});
+        let idPersona : number = persona[0].idPersona;
+        return idPersona;
+    }
+
+
 }

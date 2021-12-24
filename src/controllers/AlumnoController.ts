@@ -39,18 +39,40 @@ export async function obtenerAlumnos(request: Request, response: Response) {
     }
 
 
-export async function crearAlumno(request: Request, response: Response) {
-    try{
-        let body = request.body;
-        return response.status(HttpStatusCode.OK).json(await _alumnoSevice.crearAlumno(body))
-    }catch (e) {
-        return response.sendStatus(HttpStatusCode.CONFLICT);
-    }
-}
-
-        export const AlumnoController = {
-            obtenerAlumnos,
-            obtenerAlumnoCuil,
-            crearAlumno,
+    export async function crearAlumno(request: Request, response: Response) {
+        try {
+            let body = request.body;
+            return response.status(HttpStatusCode.OK).json(await _alumnoSevice.crearAlumno(body))
+        } catch (e) {
+            return response.sendStatus(HttpStatusCode.CONFLICT);
         }
+    }
+
+    export async function eliminarAlumno(request: Request, response: Response) {
+        try {
+            return response.status(HttpStatusCode.OK).json(await _alumnoSevice.eliminarAlumno(request.params.cuil))
+        } catch (e) {
+            return response.sendStatus(HttpStatusCode.CONFLICT);
+        }
+    }
+
+
+    export async function modificarAlumno(request: Request, response: Response) {
+        try {
+            let cuerpo = request.body
+            return response.status(HttpStatusCode.OK).json(await _alumnoSevice.modificarAlumno(request.params.cuil, cuerpo))
+        } catch (e) {
+            return response.sendStatus(HttpStatusCode.CONFLICT);
+        }
+    }
+
+
+
+    export const AlumnoController = {
+        obtenerAlumnos,
+        obtenerAlumnoCuil,
+        crearAlumno,
+        eliminarAlumno,
+        modificarAlumno
+    }
 

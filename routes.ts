@@ -23,40 +23,56 @@ export const AppRoutes = [
         method: 'post',
         action: EjemploController.ejemploActionPost,
     },
-    // Este es el metodo oficial par ael punto 1. ---------------
+// Este la ruta metodo oficial para el punto 1. ---------------
     {
         path: '/obtenerTemas',
         method: 'get',
         action: TemasController.obtenerTemas,
     },
-// Este es el metodo oficial par ael punto 2. ---------------
+// Este es la ruta oficial para el punto 2. ---------------
     {
         path: '/obtenerTemasPorId/:id',
         method: 'get',
         action: TemasController.obtenerTemasPorSP,
     },
-// Este es el metodo oficial par ael punto 3. ---------------
+// Este es la ruta oficial para el punto 3. ---------------
 
     {
         path: '/obtenerAlumnos',
         method: 'get',
         action: AlumnoController.obtenerAlumnos,
     },
-// Este es el metodo oficial par ael punto 4. ---------------
+// Este es la ruta oficial para el punto 4. ---------------
 
     {
         path: '/obtenerAlumnoCuil/:cuil',
         method: 'get',
         action: AlumnoController.obtenerAlumnoCuil,
     },
-// Este es el metodo oficial par ael punto 5. ---------------
-
+// Este es la ruta oficial para el punto 6. (no hay punto 5)---------------
 
     {
         path: '/crearAlumno',
-        method: 'get',
+        method: 'post',
         action: AlumnoController.crearAlumno,
     },
+// (no hay punto 5)
+// Este es la ruta oficial para el punto 6. ---------------
+
+    {
+        path: '/eliminarAlumno/:cuil',
+        method: 'get',
+        action: AlumnoController.eliminarAlumno,
+    },
+
+ // Este es la ruta oficial para el punto 7.---------------
+
+    {
+        path: '/modificarAlumno/:cuil',
+        method: 'post',
+        action: AlumnoController.modificarAlumno,
+    },
+
     {
         path: '/obtenerReparticiones',
         method: 'get',
