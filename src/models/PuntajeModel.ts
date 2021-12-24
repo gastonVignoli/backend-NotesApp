@@ -1,6 +1,6 @@
 import {Expose} from "class-transformer";
 
-export class AlumnoModel {
+export class PuntajeModel {
     @Expose({name: "id_puntaje"})
     id_puntaje: number;
 
