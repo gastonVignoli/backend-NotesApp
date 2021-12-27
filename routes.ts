@@ -87,6 +87,13 @@ export const AppRoutes = [
         method: 'post',
         action: PuntajeController.modificarPuntaje,
     },
+// Este es la ruta oficial para el punto 11.---------------
+
+    {
+        path: '/obtenerPuntajeCuil/:cuil',
+        method: 'post',
+        action: PuntajeController.obtenerPuntajeCuil,
+    },
 
     {
         path: '/obtenerReparticiones',

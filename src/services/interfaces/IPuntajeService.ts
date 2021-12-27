@@ -6,5 +6,7 @@ export interface IPuntajeService {
 
     modificarPuntaje(cuerpo: any): Promise<any>;
 
+    obtenerPuntajeCuil(cuil: string): Promise<any>;
+
 
 }

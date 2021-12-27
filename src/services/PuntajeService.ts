@@ -59,4 +59,42 @@ export class PuntajeService implements IPuntajeService {
             return false;
         }
     }
+
+    public async obtenerPuntajeCuil(cuil: string): Promise<any> {
+        try {
+
+            let idPersona = await this.obtenerPersonaPorCuil(cuil);
+            let idAlumno =  await this.obtenerAlumnoPorIdPersona(idPersona)
+
+/*
+            const personasRepo = getManager().getRepository(Personas)
+            let persona = await personasRepo.findOne({where: {cuil: cuil}})
+*/
+            /*const AlumnosRepo = getManager().getRepository(Alumnos)
+            const alumno = await AlumnosRepo.findOne({where: {idPersona: persona.idPersona}})
+            console.log(alumno)*/
+
+            const repositoryPuntajes = getManager().getRepository(Puntajes)
+            const puntaje = await repositoryPuntajes.find({where: {idAlumno : idAlumno}})
+            return puntaje
+
+        } catch (error) {
+            console.log(`------------------Hubo un Error: ------------------${error}`)
+            return "No se encontraron datos"
+        }
+    }
+
+    private async obtenerPersonaPorCuil(cuil: string) {
+        let persona: Personas[] = await getManager().getRepository(Personas)
+            .find({cuil: cuil});
+        let idPersona : number = persona[0].idPersona;
+        return idPersona;    }
+
+    private async obtenerAlumnoPorIdPersona(idPersona: number) {
+        let alumno: Alumnos[] = await getManager().getRepository(Alumnos)
+            .find({idPersona: idPersona});
+        let idAlumno : number = alumno[0].idAlumno;
+        return idAlumno;
+
+    }
 }

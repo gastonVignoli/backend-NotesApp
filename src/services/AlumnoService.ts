@@ -77,7 +77,7 @@ export class AlumnoService implements IAlumnoService {
     public async eliminarAlumno(cuil: string): Promise<any> {
         try{
             let idPersona: number = await this.obtenerIdPersona(cuil);
-            console.log(`el id de esa persona es: ${idPersona}` )
+            console.log(`estas por eliminar la persona nro: ${idPersona}` )
 
             await getManager().transaction(async (transactionalEntityManager) => {
                 //elimino alumno
@@ -103,7 +103,7 @@ export class AlumnoService implements IAlumnoService {
     public async modificarAlumno(cuil: string, body: any): Promise<any> {
         try{
             let idPersona: number = await this.obtenerIdPersona(cuil);
-
+//  Para modificar el alumno se deben ingresar todos los datos de persona y alumno
             await getManager().transaction(async (transactionalEntityManager)=>{
                 await transactionalEntityManager.createQueryBuilder()
                     .update(Personas)
@@ -112,7 +112,7 @@ export class AlumnoService implements IAlumnoService {
                     .execute();
                 await transactionalEntityManager.createQueryBuilder()
                     .update(Alumnos)
-                    .set({idReparticion2: body.reparticion})
+                    .set({idReparticion: body.reparticion})
                     .where(`id_persona = ${idPersona}`)
                     .execute();
             });
