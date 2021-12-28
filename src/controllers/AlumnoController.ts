@@ -11,9 +11,22 @@ import * as http from "http";
 
 let _alumnoSevice = container.get<AlumnoService>(EjemploTypes.Alumno)
 
-export async function obtenerAlumnos(request: Request, response: Response) {
+    export async function obtenerAlumnos(request: Request, response: Response) {
     try {
         let respuesta = await _alumnoSevice.obtenerAlumnos();
+        if (respuesta) {
+            return response.status(HttpStatusCode.OK).json(respuesta);
+        } else {
+            return response.status(HttpStatusCode.NOT_FOUND).json("No se encontraron datos");
+        }
+    } catch (error) {
+        return response.status(HttpStatusCode.CONFLICT).json(error)
+    }
+}
+
+    export async function getAlumnos(request: Request, response: Response) {
+    try {
+        let respuesta = await _alumnoSevice.getAlumnos();
         if (respuesta) {
             return response.status(HttpStatusCode.OK).json(respuesta);
         } else {
@@ -38,7 +51,6 @@ export async function obtenerAlumnos(request: Request, response: Response) {
         }
     }
 
-
     export async function crearAlumno(request: Request, response: Response) {
         try {
             let body = request.body;
@@ -56,7 +68,6 @@ export async function obtenerAlumnos(request: Request, response: Response) {
         }
     }
 
-
     export async function modificarAlumno(request: Request, response: Response) {
         try {
             let cuerpo = request.body
@@ -73,6 +84,7 @@ export async function obtenerAlumnos(request: Request, response: Response) {
         obtenerAlumnoCuil,
         crearAlumno,
         eliminarAlumno,
-        modificarAlumno
+        modificarAlumno,
+        getAlumnos
     }
 

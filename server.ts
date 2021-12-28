@@ -15,8 +15,14 @@ const app = Express();
  * **/
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
-
+app.use(cors(
+    {
+        origin: 'http://localhost:4301',
+        optionsSuccessStatus: 200
+    }
+))
 AppRoutes.forEach((route) => {
+
     app.use(
         route.path,
         (request: Request, response: Response, next: Function) => {
@@ -28,13 +34,7 @@ AppRoutes.forEach((route) => {
     );
 });
 
-app.use(cors(
-    {
-        credentials: true,
-        origin: 'http://localhost 4301',
-        optionsSuccessStatus: 200
-    }
-))
+
 
 
 // Iniciamos el servidor express

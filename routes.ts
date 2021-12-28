@@ -94,6 +94,13 @@ export const AppRoutes = [
         method: 'post',
         action: PuntajeController.obtenerPuntajeCuil,
     },
+// Este es la ruta oficial para cargar los alumnos en angular.---------------
+
+    {
+        path: '/alumnos',
+        method: 'get',
+        action: AlumnoController.getAlumnos,
+    },
 
     {
         path: '/obtenerReparticiones',

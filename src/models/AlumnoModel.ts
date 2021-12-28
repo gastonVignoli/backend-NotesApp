@@ -2,13 +2,16 @@ import {Expose} from "class-transformer";
 
 export class AlumnoModel {
     @Expose({name: "id_alumno"})
-    id_alumno: number;
+    idAlumno: number;
 
     @Expose({name: "id_persona"})
     id_persona: number;
 
     @Expose({name: "id_reparticion"})
     id_reparticion: number | null;
+
+    @Expose({name: "reparticion"})
+    reparticion: string | null;
 
     @Expose({name: "cuil"})
     cuil: number | null;
@@ -23,13 +26,15 @@ export class AlumnoModel {
     edad: number | null;
 
 
-    constructor(id_alumno: number, id_persona: number, id_reparticion: number | null, cuil: number | null, nombre: string, apellido: string, edad: number | null) {
-        this.id_alumno = id_alumno;
+    constructor(id_alumno: number, id_persona: number, id_reparticion: number | null, cuil: number | null,
+                nombre: string, apellido: string, edad: number | null, reparticion: string | null) {
+        this.idAlumno = id_alumno;
         this.id_persona = id_persona;
         this.id_reparticion = id_reparticion;
         this.cuil = cuil;
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
+        this.reparticion = reparticion
     }
 }

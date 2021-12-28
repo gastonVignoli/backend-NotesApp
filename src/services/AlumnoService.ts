@@ -50,7 +50,6 @@ export class AlumnoService implements IAlumnoService {
         }
     }
 
-
     public async crearAlumno(body: any): Promise<any>{
         try{
             let alumno: Alumnos = new Alumnos();
@@ -123,10 +122,29 @@ export class AlumnoService implements IAlumnoService {
         }
     }
 
+    public async getAlumnos() {
+        let resultado: AlumnoModel;
+        await getManager()
+            /* Este SP fue hecho de manera artesanal solo para este método, "VLI" por Vignoli */
+            .query(`CALL VLI_GETALUMNOS`).then(x => {
+                let result: AlumnoModel;
+                result = plainToClass(AlumnoModel, x[0], {
+                    excludeExtraneousValues: true
+                });
+                console.log(x)
+                console.error(result);
+                resultado = result;
+            }).catch(e => {
+                console.log("No se encontraron Alumnos");
+            });
+        return resultado;
+    }
+
     private async reparticionesPorNombre(nombre: string): Promise<any>{
         let repositoryReparticiones = getManager().getRepository(Reparticiones);
         return repositoryReparticiones.findOne({nombre: nombre});
     }
+
     private async obtenerIdPersona(cuil: string): Promise<number>{
         let persona: Personas[] = await getManager().getRepository(Personas)
             .find({cuil: cuil});
