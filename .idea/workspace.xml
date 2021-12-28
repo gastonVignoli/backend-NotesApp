@@ -19,13 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="punto 10 terminado">
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="punto 11 terminado, correcciones en punto 8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/PuntajeController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/PuntajeController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/AlumnoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AlumnoService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/PuntajeService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PuntajeService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/interfaces/IPuntajeService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/interfaces/IPuntajeService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +143,8 @@
       <workItem from="1640348550204" duration="2958000" />
       <workItem from="1640352103626" duration="3632000" />
       <workItem from="1640366066009" duration="5588000" />
-      <workItem from="1640607042402" duration="5655000" />
+      <workItem from="1640607042402" duration="6359000" />
+      <workItem from="1640693159319" duration="3306000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;prueba commit desde WS&quot;">
       <created>1640263188879</created>
@@ -189,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640372493361</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="punto 11 terminado, correcciones en punto 8">
+      <created>1640616824468</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640616824468</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +219,7 @@
     <MESSAGE value="&quot;Puntaje model listo&quot;" />
     <MESSAGE value="Interfaz, controller y service de Puntaje" />
     <MESSAGE value="punto 10 terminado" />
-    <option name="LAST_COMMIT_MESSAGE" value="punto 10 terminado" />
+    <MESSAGE value="punto 11 terminado, correcciones en punto 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="punto 11 terminado, correcciones en punto 8" />
   </component>
 </project>

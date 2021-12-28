@@ -66,14 +66,6 @@ export class PuntajeService implements IPuntajeService {
             let idPersona = await this.obtenerPersonaPorCuil(cuil);
             let idAlumno =  await this.obtenerAlumnoPorIdPersona(idPersona)
 
-/*
-            const personasRepo = getManager().getRepository(Personas)
-            let persona = await personasRepo.findOne({where: {cuil: cuil}})
-*/
-            /*const AlumnosRepo = getManager().getRepository(Alumnos)
-            const alumno = await AlumnosRepo.findOne({where: {idPersona: persona.idPersona}})
-            console.log(alumno)*/
-
             const repositoryPuntajes = getManager().getRepository(Puntajes)
             const puntaje = await repositoryPuntajes.find({where: {idAlumno : idAlumno}})
             return puntaje

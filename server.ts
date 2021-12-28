@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import 'dotenv/config';
 import { AppRoutes } from './routes';
 import {connectDB} from "./database";
-
+import cors = require('cors');
 const app = Express();
 
 /**
@@ -27,6 +27,14 @@ AppRoutes.forEach((route) => {
         }
     );
 });
+
+app.use(cors(
+    {
+        credentials: true,
+        origin: 'http://localhost 4301',
+        optionsSuccessStatus: 200
+    }
+))
 
 
 // Iniciamos el servidor express
