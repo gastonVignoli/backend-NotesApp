@@ -21,10 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="punto 11 pulido">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/AlumnoController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AlumnoController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/AlumnoModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/AlumnoModel.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/AlumnoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AlumnoService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,6 +144,7 @@
       <workItem from="1640366066009" duration="5588000" />
       <workItem from="1640607042402" duration="6359000" />
       <workItem from="1640693159319" duration="9201000" />
+      <workItem from="1640781737061" duration="910000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;prueba commit desde WS&quot;">
       <created>1640263188879</created>

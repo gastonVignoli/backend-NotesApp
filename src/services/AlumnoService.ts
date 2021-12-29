@@ -131,8 +131,8 @@ export class AlumnoService implements IAlumnoService {
                 result = plainToClass(AlumnoModel, x[0], {
                     excludeExtraneousValues: true
                 });
-                console.log(x)
-                console.error(result);
+                //console.log(x)
+                //console.error(result);
                 resultado = result;
             }).catch(e => {
                 console.log("No se encontraron Alumnos");
