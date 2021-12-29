@@ -60,6 +60,7 @@ export class AlumnoService implements IAlumnoService {
             persona.edad = body.edad;
             persona.cuil = body.cuil;
             alumno.idReparticion2 = reparticion;
+            alumno.idReparticion = reparticion.idReparticion;
             await getManager().transaction(async (transactionalEntityManager) => {
                 await transactionalEntityManager.save(persona);
                 alumno.idPersona2 = persona;

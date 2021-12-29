@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="punto 11 pulido">
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="correccion de puerto en server.ts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/AlumnoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AlumnoService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +145,8 @@
       <workItem from="1640366066009" duration="5588000" />
       <workItem from="1640607042402" duration="6359000" />
       <workItem from="1640693159319" duration="9201000" />
-      <workItem from="1640781737061" duration="910000" />
+      <workItem from="1640781737061" duration="8270000" />
+      <workItem from="1640804524708" duration="1903000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;prueba commit desde WS&quot;">
       <created>1640263188879</created>
@@ -202,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640698187895</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="correccion de puerto en server.ts">
+      <created>1640782805993</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1640782805993</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +237,7 @@
     <MESSAGE value="punto 10 terminado" />
     <MESSAGE value="punto 11 terminado, correcciones en punto 8" />
     <MESSAGE value="punto 11 pulido" />
-    <option name="LAST_COMMIT_MESSAGE" value="punto 11 pulido" />
+    <MESSAGE value="correccion de puerto en server.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="correccion de puerto en server.ts" />
   </component>
 </project>
