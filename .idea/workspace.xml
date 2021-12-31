@@ -19,11 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="correccion de puerto en server.ts">
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="correccion en idReparticion de AlumnoService.ts">
+      <change afterPath="$PROJECT_DIR$/src/models/PuntajeBandejaModel.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/PuntajeController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/PuntajeController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/AlumnoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AlumnoService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/PuntajeService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PuntajeService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +149,7 @@
       <workItem from="1640693159319" duration="9201000" />
       <workItem from="1640781737061" duration="8270000" />
       <workItem from="1640804524708" duration="1903000" />
+      <workItem from="1640957154737" duration="4001000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;prueba commit desde WS&quot;">
       <created>1640263188879</created>

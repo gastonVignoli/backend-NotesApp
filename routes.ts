@@ -101,6 +101,13 @@ export const AppRoutes = [
         method: 'get',
         action: AlumnoController.getAlumnos,
     },
+// Este es la ruta alternativa para el punto 11.---------------
+
+    {
+        path: '/obtenerPuntajeCuilSP/:cuil',
+        method: 'post',
+        action: PuntajeController.obtenerPuntajeCuilSP,
+    },
 
     {
         path: '/obtenerReparticiones',

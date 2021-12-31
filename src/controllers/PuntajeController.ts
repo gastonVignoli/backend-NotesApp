@@ -33,7 +33,22 @@ let _puntajeSevice = container.get<PuntajeService>(EjemploTypes.Puntaje)
         try {
             let respuesta = await _puntajeSevice.obtenerPuntajeCuil(request.params.cuil);
             console.log(respuesta)
-            if (respuesta.length > 0) {
+            if (respuesta) {
+                return response.status(HttpStatusCode.OK).json(respuesta);
+            } else {
+                return response.status(HttpStatusCode.NOT_FOUND).json("No se encontraron puntajes para" +
+                    " el numero de CUIL ingresado");
+            }
+        } catch (error) {
+            return response.status(HttpStatusCode.CONFLICT).json(error)
+        }
+    }
+
+    export async function obtenerPuntajeCuilSP(request: Request, response: Response) {
+        try {
+            let respuesta = await _puntajeSevice.obtenerPuntajeCuilSP(request.params.cuil);
+            console.log(respuesta)
+            if (respuesta) {
                 return response.status(HttpStatusCode.OK).json(respuesta);
             } else {
                 return response.status(HttpStatusCode.NOT_FOUND).json("No se encontraron puntajes para" +
@@ -50,6 +65,7 @@ export const PuntajeController = {
 
     registrarPuntaje,
     modificarPuntaje,
-    obtenerPuntajeCuil
+    obtenerPuntajeCuil,
+    obtenerPuntajeCuilSP
 }
 

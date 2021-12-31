@@ -4,6 +4,9 @@ import {createQueryBuilder, getManager} from "typeorm";
 import {Puntajes} from "../entities/Puntajes";
 import {Personas} from "../entities/Personas";
 import {Alumnos} from "../entities/Alumnos";
+import {AlumnoModel} from "../models/AlumnoModel";
+import {plainToClass} from "class-transformer";
+import {PuntajeBandejaModel} from "../models/PuntajeBandejaModel";
 
 
 @injectable()
@@ -37,7 +40,6 @@ export class PuntajeService implements IPuntajeService {
 
     public async modificarPuntaje(cuerpo: any): Promise<any> {
         try{
-            console.log("Felicitaciones Ud. llego al servicio! --------------------------------------------------------------------------+++++++++++++++++++++++++++++++++")
             await getManager().transaction(async (transactionalEntityManager)=>{
                 await transactionalEntityManager.createQueryBuilder()
                     .update(Puntajes).set({
@@ -88,5 +90,29 @@ export class PuntajeService implements IPuntajeService {
         let idAlumno : number = alumno[0].idAlumno;
         return idAlumno;
 
+    }
+
+    public async obtenerPuntajeCuilSP(cuil:string): Promise<any> {
+        try {
+            console.log(`El cuil que llego al service del BackEnd es: ${cuil}`)
+            let resultado: PuntajeBandejaModel;
+            await getManager()
+                /* Este SP fue hecho de manera artesanal solo para este método, "VLI" por Vignoli */
+                .query(`CALL VLI_PUNTAJESXCUIL(${cuil})`).then(x => {
+                    let result: PuntajeBandejaModel;
+                    result = plainToClass(PuntajeBandejaModel, x[0], {
+                        excludeExtraneousValues: true
+                    });
+                    console.log(x)
+                    console.error(result);
+                    resultado = result;
+                }).catch(e => {
+                    console.log("No se encontraron Alumnos");
+                });
+            return resultado;
+        } catch (e) {
+            console.error(e);
+            return null;
+        }
     }
 }

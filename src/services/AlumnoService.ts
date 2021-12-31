@@ -124,6 +124,7 @@ export class AlumnoService implements IAlumnoService {
     }
 
     public async getAlumnos() {
+        console.log("Ud llego al service de alumnos en el Backend")
         let resultado: AlumnoModel;
         await getManager()
             /* Este SP fue hecho de manera artesanal solo para este método, "VLI" por Vignoli */
@@ -132,8 +133,8 @@ export class AlumnoService implements IAlumnoService {
                 result = plainToClass(AlumnoModel, x[0], {
                     excludeExtraneousValues: true
                 });
-                //console.log(x)
-                //console.error(result);
+                // console.log(x)
+                // console.error(result);
                 resultado = result;
             }).catch(e => {
                 console.log("No se encontraron Alumnos");
