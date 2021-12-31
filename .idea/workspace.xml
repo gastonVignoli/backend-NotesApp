@@ -19,13 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="correccion en idReparticion de AlumnoService.ts">
-      <change afterPath="$PROJECT_DIR$/src/models/PuntajeBandejaModel.ts" afterDir="false" />
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="Nueva alternativa para consular por cuil, agregado puntajes en bandeja">
+      <change afterPath="$PROJECT_DIR$/src/controllers/PorfesorController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ProfesorModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/ProfesorService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/interfaces/IProfesorService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/PuntajeController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/PuntajeController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/AlumnoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AlumnoService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/PuntajeService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PuntajeService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/interfaces/IAlumnoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/interfaces/IAlumnoService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +153,7 @@
       <workItem from="1640781737061" duration="8270000" />
       <workItem from="1640804524708" duration="1903000" />
       <workItem from="1640957154737" duration="4001000" />
+      <workItem from="1640962454771" duration="2274000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;prueba commit desde WS&quot;">
       <created>1640263188879</created>
@@ -214,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640782805993</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Nueva alternativa para consular por cuil, agregado puntajes en bandeja">
+      <created>1640962781495</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1640962781495</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +252,7 @@
     <MESSAGE value="punto 11 terminado, correcciones en punto 8" />
     <MESSAGE value="punto 11 pulido" />
     <MESSAGE value="correccion de puerto en server.ts" />
-    <option name="LAST_COMMIT_MESSAGE" value="correccion de puerto en server.ts" />
+    <MESSAGE value="Nueva alternativa para consular por cuil, agregado puntajes en bandeja" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nueva alternativa para consular por cuil, agregado puntajes en bandeja" />
   </component>
 </project>

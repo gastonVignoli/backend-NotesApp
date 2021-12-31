@@ -11,8 +11,7 @@ import {Reparticiones} from "../entities/Reparticiones";
 
 @injectable()
 export class AlumnoService implements IAlumnoService {
-    constructor() {
-    }
+    constructor() {}
 
 
     public async obtenerAlumnos(): Promise<any> {
@@ -124,7 +123,6 @@ export class AlumnoService implements IAlumnoService {
     }
 
     public async getAlumnos() {
-        console.log("Ud llego al service de alumnos en el Backend")
         let resultado: AlumnoModel;
         await getManager()
             /* Este SP fue hecho de manera artesanal solo para este método, "VLI" por Vignoli */

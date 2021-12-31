@@ -2,6 +2,7 @@ import {EjemploController, obtenerReparticiones} from "./src/controllers/Ejemplo
 import {TemasController} from "./src/controllers/TemasController";
 import {AlumnoController} from "./src/controllers/AlumnoController";
 import {modificarPuntaje, PuntajeController} from "./src/controllers/PuntajeController";
+import {ProfesorController} from "./src/controllers/PorfesorController";
 
 export const AppRoutes = [
     {
@@ -107,6 +108,14 @@ export const AppRoutes = [
         path: '/obtenerPuntajeCuilSP/:cuil',
         method: 'post',
         action: PuntajeController.obtenerPuntajeCuilSP,
+    },
+
+// Esta es la ruta usada para buscar los profesores desde el ForntEnd.
+
+    {
+        path: '/profesores',
+        method: 'get',
+        action: ProfesorController.getProfesores,
     },
 
     {
