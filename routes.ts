@@ -2,7 +2,7 @@ import {EjemploController, obtenerReparticiones} from "./src/controllers/Ejemplo
 import {TemasController} from "./src/controllers/TemasController";
 import {AlumnoController} from "./src/controllers/AlumnoController";
 import {modificarPuntaje, PuntajeController} from "./src/controllers/PuntajeController";
-import {ProfesorController} from "./src/controllers/PorfesorController";
+import {ProfesorController} from "./src/controllers/ProfesorController";
 
 export const AppRoutes = [
     {

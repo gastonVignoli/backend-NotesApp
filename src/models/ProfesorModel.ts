@@ -5,10 +5,10 @@ export class ProfesorModel {
     idProfesor: number;
 
     @Expose({name: "id_persona"})
-    id_persona: number;
+    idPersona: number;
 
     @Expose({name: "id_cargo"})
-    id_cargo: number | null;
+    idCargo: number | null;
 
     @Expose({name: "cuil"})
     cuil: number | null;
@@ -25,8 +25,8 @@ export class ProfesorModel {
 
     constructor(idProfesor: number, id_persona: number, id_cargo: number | null, cuil: number | null, nombre: string, apellido: string, edad: number | null) {
         this.idProfesor = idProfesor;
-        this.id_persona = id_persona;
-        this.id_cargo = id_cargo;
+        this.idPersona = id_persona;
+        this.idCargo = id_cargo;
         this.cuil = cuil;
         this.nombre = nombre;
         this.apellido = apellido;

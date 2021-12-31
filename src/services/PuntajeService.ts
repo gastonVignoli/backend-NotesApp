@@ -7,6 +7,7 @@ import {Alumnos} from "../entities/Alumnos";
 import {AlumnoModel} from "../models/AlumnoModel";
 import {plainToClass} from "class-transformer";
 import {PuntajeBandejaModel} from "../models/PuntajeBandejaModel";
+import {Reparticiones} from "../entities/Reparticiones";
 
 
 @injectable()

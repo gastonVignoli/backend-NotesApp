@@ -8,6 +8,8 @@ import {IPuntajeService} from "./interfaces/IPuntajeService";
 import {PuntajeService} from "./PuntajeService";
 import {IProfesorService} from "./interfaces/IProfesorService";
 import {ProfesorService} from "./ProfesorService";
+import {ITemaService} from "./interfaces/ITemaService";
+import {TemaService} from "./TemaService";
 
 const container = new Container();
 
@@ -17,5 +19,6 @@ container.bind<IEjemploService>(EjemploTypes.Ejemplo).to(EjemploServiceBis);
 container.bind<IAlumnoService>(EjemploTypes.Alumno).to(AlumnoService);
 container.bind<IPuntajeService>(EjemploTypes.Puntaje).to(PuntajeService);
 container.bind<IProfesorService>(EjemploTypes.Profesor).to(ProfesorService);
+container.bind<ITemaService>(EjemploTypes.Tema).to(TemaService);
 
 export default container;
