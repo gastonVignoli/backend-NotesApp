@@ -10,7 +10,6 @@ export class TemaService implements ITemaService {
     constructor() {}
 
     public async getTemas() {
-        console.log("Ud a llegado al service de Profesor")
         try {
             const temasRepository = await getManager().getRepository(Temas);
             const p: Temas[] = await temasRepository.find();
