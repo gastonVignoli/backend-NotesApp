@@ -5,28 +5,9 @@ import {modificarPuntaje, PuntajeController} from "./src/controllers/PuntajeCont
 import {ProfesorController} from "./src/controllers/ProfesorController";
 
 export const AppRoutes = [
-    // {
-    //     path: '/ejemplo',
-    //     method: 'get',
-    //     action: EjemploController.ejemploAction
-    // },
-    // {
-    //     path: '/ejemploParams/:nombre/:apellido',
-    //     method: 'get',
-    //     action: EjemploController.ejemploActionConParametros,
-    // },
-    // {
-    //     path: '/ejemploQParams',
-    //     method: 'get',
-    //     action: EjemploController.ejemploActionConQParametros,
-    // },
-    // {
-    //     path: '/ejemploPost',
-    //     method: 'post',
-    //     action: EjemploController.ejemploActionPost,
-    // },
 
-// This route is for pulling all existing notes. ---------------
+
+    // . ---------------
     {
         path: '/getNotes',
         method: 'get',
@@ -37,6 +18,20 @@ export const AppRoutes = [
         path: '/createNote',
         method: 'post',
         action: NotesController.createNote,
+    },
+
+    // This route is for editig a note..---------------
+    {
+        path: '/updateNote/',
+        method: 'post',
+        action: NotesController.updateNote,
+    },
+
+    // This route is for deleting a note. ---------------
+    {
+        path: '/deleteNote/:idNote',
+        method: 'get',
+        action: NotesController.deleteNote,
     },
 // Este es la ruta oficial para el punto 2. ---------------
 //     {

@@ -8,26 +8,7 @@ var PuntajeController_1 = require("./src/controllers/PuntajeController");
 var ProfesorController_1 = require("./src/controllers/ProfesorController");
 const {getNotes} = require("./src/controllers/NotesController");
 exports.AppRoutes = [
-    {
-        path: '/ejemplo',
-        method: 'get',
-        action: EjemploController_1.EjemploController.ejemploAction
-    },
-    {
-        path: '/ejemploParams/:nombre/:apellido',
-        method: 'get',
-        action: EjemploController_1.EjemploController.ejemploActionConParametros,
-    },
-    {
-        path: '/ejemploQParams',
-        method: 'get',
-        action: EjemploController_1.EjemploController.ejemploActionConQParametros,
-    },
-    {
-        path: '/ejemploPost',
-        method: 'post',
-        action: EjemploController_1.EjemploController.ejemploActionPost,
-    },
+
     // . ---------------
     {
         path: '/getNotes',
