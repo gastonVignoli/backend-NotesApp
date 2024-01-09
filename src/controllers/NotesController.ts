@@ -8,8 +8,6 @@ import {NotesService} from "../services/NotesService";
 import HttpStatusCode from "../enums/HttpStatusCode";
 import {EjemploService} from "../services/EjemploService";
 
-let _ejemploService = container.get<EjemploServiceBis>(EjemploTypes.Ejemplo)
-
 let _notesService = container.get<NotesService>(EjemploTypes.Note)
 
     export async function getNotes(request: Request, response: Response) {
@@ -24,6 +22,32 @@ let _notesService = container.get<NotesService>(EjemploTypes.Note)
             return response.status(HttpStatusCode.CONFLICT).json(error)
         }
     }
+
+export async function createNote(request: Request, response: Response) {
+    try {
+        let body = request.body;
+        return response.status(HttpStatusCode.OK).json(await _notesService.createNote(body))
+    } catch (e) {
+        return response.sendStatus(HttpStatusCode.CONFLICT);
+    }
+}
+
+export async function updateNote(request: Request, response: Response) {
+    try {
+        let cuerpo = request.body
+        return response.status(HttpStatusCode.OK).json(await _notesService.updateNote(cuerpo))
+    } catch (e) {
+        return response.sendStatus(HttpStatusCode.CONFLICT);
+    }
+}
+
+export async function deleteNote(request: Request, response: Response) {
+    try {
+        return response.status(HttpStatusCode.OK).json(await _notesService.deleteNote(+request.params.idNote))
+    } catch (e) {
+        return response.sendStatus(HttpStatusCode.CONFLICT);
+    }
+}
 
 // A partir de aca son métodos que no usamos en el front que fueron ejemplos durante la clase para entender NodeJS
 //
@@ -43,5 +67,8 @@ let _notesService = container.get<NotesService>(EjemploTypes.Note)
 
 export const NotesController = {
     getNotes,
+    createNote,
+    updateNote,
+    deleteNote,
     // obtenerTemasPorSP,
 }

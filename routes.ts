@@ -5,31 +5,38 @@ import {modificarPuntaje, PuntajeController} from "./src/controllers/PuntajeCont
 import {ProfesorController} from "./src/controllers/ProfesorController";
 
 export const AppRoutes = [
-    {
-        path: '/ejemplo',
-        method: 'get',
-        action: EjemploController.ejemploAction
-    },
-    {
-        path: '/ejemploParams/:nombre/:apellido',
-        method: 'get',
-        action: EjemploController.ejemploActionConParametros,
-    },
-    {
-        path: '/ejemploQParams',
-        method: 'get',
-        action: EjemploController.ejemploActionConQParametros,
-    },
-    {
-        path: '/ejemploPost',
-        method: 'post',
-        action: EjemploController.ejemploActionPost,
-    },
-// Este la ruta metodo oficial para el punto 1. ---------------
+    // {
+    //     path: '/ejemplo',
+    //     method: 'get',
+    //     action: EjemploController.ejemploAction
+    // },
+    // {
+    //     path: '/ejemploParams/:nombre/:apellido',
+    //     method: 'get',
+    //     action: EjemploController.ejemploActionConParametros,
+    // },
+    // {
+    //     path: '/ejemploQParams',
+    //     method: 'get',
+    //     action: EjemploController.ejemploActionConQParametros,
+    // },
+    // {
+    //     path: '/ejemploPost',
+    //     method: 'post',
+    //     action: EjemploController.ejemploActionPost,
+    // },
+
+// This route is for pulling all existing notes. ---------------
     {
         path: '/getNotes',
         method: 'get',
         action: NotesController.getNotes,
+    },
+// This route is for creating a note. ---------------
+    {
+        path: '/createNote',
+        method: 'post',
+        action: NotesController.createNote,
     },
 // Este es la ruta oficial para el punto 2. ---------------
 //     {

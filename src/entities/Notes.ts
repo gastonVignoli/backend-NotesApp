@@ -10,7 +10,10 @@ export class Notes {
 
   @Column("varchar", { name: "content", nullable: true, length: 45 })
   content: string | null;
-  //
+
+  @Column({ name: "archived" })
+  archived: boolean;
+
   // @Column("varchar", { name: "duracion", nullable: true, length: 45 })
   // duracion: string | null;
 }

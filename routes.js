@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppRoutes = void 0;
 var EjemploController_1 = require("./src/controllers/EjemploController");
-var TemasController_1 = require("./src/controllers/NotesController");
+var NotesController_1 = require("./src/controllers/NotesController");
 var AlumnoController_1 = require("./src/controllers/AlumnoController");
 var PuntajeController_1 = require("./src/controllers/PuntajeController");
 var ProfesorController_1 = require("./src/controllers/ProfesorController");
@@ -28,11 +28,31 @@ exports.AppRoutes = [
         method: 'post',
         action: EjemploController_1.EjemploController.ejemploActionPost,
     },
-    // Este la ruta metodo oficial para el punto 1. ---------------
+    // . ---------------
     {
-        path: '/obtenerTemas',
+        path: '/getNotes',
         method: 'get',
-        action: TemasController_1.NotesController.getNotes,
+        action: NotesController_1.NotesController.getNotes,
+    },
+// This route is for creating a note. ---------------
+    {
+        path: '/createNote',
+        method: 'post',
+        action: NotesController_1.NotesController.createNote,
+    },
+
+    // This route is for editig a note..---------------
+    {
+        path: '/updateNote/',
+        method: 'post',
+        action: NotesController_1.NotesController.updateNote,
+    },
+
+    // This route is for deleting a note. ---------------
+    {
+        path: '/deleteNote/:idNote',
+        method: 'get',
+        action: NotesController_1.NotesController.deleteNote,
     },
     // Este es la ruta oficial para el punto 2. ---------------
     // {
@@ -52,12 +72,7 @@ exports.AppRoutes = [
         method: 'get',
         action: AlumnoController_1.AlumnoController.obtenerAlumnoCuil,
     },
-    // Este es la ruta oficial para el punto 6. (no hay punto 5)---------------
-    {
-        path: '/crearAlumno',
-        method: 'post',
-        action: AlumnoController_1.AlumnoController.crearAlumno,
-    },
+
     // (no hay punto 5)
     // Este es la ruta oficial para el punto 7. ---------------
     {
