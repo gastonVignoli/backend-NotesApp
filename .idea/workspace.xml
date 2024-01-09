@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,17 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="Profesores service, controller e interface; getProfesores">
-      <change afterPath="$PROJECT_DIR$/src/services/TemaService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/interfaces/ITemaService.ts" afterDir="false" />
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="el error es de coneccion con la BD. Supuestamente el resto está">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/PorfesorController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ProfesorController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/TemasController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/TemasController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ProfesorModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ProfesorModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/PuntajeService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PuntajeService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/inversify.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/inversify.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/types/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +60,12 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="21mKGtQUGzGlL4o1KgkV0Ml2pSv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -73,18 +74,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="ts.external.directory.path" value="G:\OneDrive - frc.utn.edu.ar\CIDS\Desarrollo\capacitacion-nodejs\node_modules\typescript\lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;vignoli&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Proyectos/Challenge/capacitacion-nodejs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Proyectos\\Challenge\\capacitacion-nodejs\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Proyectos\Challenge\capacitacion-nodejs" />
       <recent name="G:\OneDrive - frc.utn.edu.ar\CIDS\Desarrollo\capacitacion-nodejs\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -92,7 +102,7 @@
       <recent name="G:\OneDrive - frc.utn.edu.ar\CIDS\Desarrollo\capacitacion-nodejs\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration default="true" type="NodeJSConfigurationType" path-to-js-file="dist/server.js" working-dir="$PROJECT_DIR$">
       <method v="2">
         <option name="NpmBeforeRunTask" enabled="true">
@@ -119,6 +129,21 @@
         </option>
       </method>
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -155,7 +180,24 @@
       <workItem from="1640804524708" duration="1903000" />
       <workItem from="1640957154737" duration="4001000" />
       <workItem from="1640962454771" duration="3873000" />
-      <workItem from="1640976258608" duration="4039000" />
+      <workItem from="1640976258608" duration="4110000" />
+      <workItem from="1641129234909" duration="1299000" />
+      <workItem from="1641132980509" duration="627000" />
+      <workItem from="1641142561184" duration="2185000" />
+      <workItem from="1641210212016" duration="5987000" />
+      <workItem from="1641231066197" duration="329000" />
+      <workItem from="1641238094481" duration="792000" />
+      <workItem from="1641245231496" duration="596000" />
+      <workItem from="1641301120355" duration="3273000" />
+      <workItem from="1704730027119" duration="812000" />
+      <workItem from="1704730927230" duration="505000" />
+      <workItem from="1704733220380" duration="2304000" />
+      <workItem from="1704735622586" duration="146000" />
+      <workItem from="1704735786218" duration="13000" />
+      <workItem from="1704745314881" duration="1441000" />
+      <workItem from="1704746781627" duration="386000" />
+      <workItem from="1704747182043" duration="741000" />
+      <workItem from="1704809849397" duration="1412000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;prueba commit desde WS&quot;">
       <created>1640263188879</created>
@@ -234,18 +276,48 @@
       <option name="project" value="LOCAL" />
       <updated>1640965652892</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Temas: controller interfaz y servicio&#10;Profesores: Idem&#10;Puntaje: ruta dedicad apra front">
+      <created>1640982248270</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640982248270</updated>
+    </task>
+    <task id="LOCAL-00013" summary="un mensaje viejo de testing">
+      <created>1641222875218</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1641222875218</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/routes.js.map" />
+        <option value="$PROJECT_DIR$/routes.js" />
+        <option value="$PROJECT_DIR$/database.js.map" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/database.js" />
+        <option value="$PROJECT_DIR$/server.js.map" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -263,6 +335,9 @@
     <MESSAGE value="correccion de puerto en server.ts" />
     <MESSAGE value="Nueva alternativa para consular por cuil, agregado puntajes en bandeja" />
     <MESSAGE value="Profesores service, controller e interface; getProfesores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Profesores service, controller e interface; getProfesores" />
+    <MESSAGE value="Temas: controller interfaz y servicio&#10;Profesores: Idem&#10;Puntaje: ruta dedicad apra front" />
+    <MESSAGE value="un mensaje viejo de testing" />
+    <MESSAGE value="el error es de coneccion con la BD. Supuestamente el resto está" />
+    <option name="LAST_COMMIT_MESSAGE" value="el error es de coneccion con la BD. Supuestamente el resto está" />
   </component>
 </project>
