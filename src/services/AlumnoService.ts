@@ -3,7 +3,7 @@ import {IAlumnoService} from "./interfaces/IAlumnoService";
 import {createQueryBuilder, getManager} from "typeorm";
 import {plainToClass} from "class-transformer";
 import {Alumnos} from "../entities/Alumnos";
-import {Temas} from "../entities/Temas";
+import {Notes} from "../entities/Notes";
 import {AlumnoModel} from "../models/AlumnoModel";
 import {Personas} from "../entities/Personas";
 import {Reparticiones} from "../entities/Reparticiones";

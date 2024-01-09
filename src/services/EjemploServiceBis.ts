@@ -2,9 +2,9 @@ import {PersonaModel} from '../models/PersonaModel';
 import {injectable} from 'inversify';
 import {IEjemploService} from "./interfaces/IEjemploService";
 import {getManager} from "typeorm";
-import {Temas} from "../entities/Temas";
+import {Notes} from "../entities/Notes";
 import {Reparticiones} from "../entities/Reparticiones";
-import {TemasModel} from "../models/TemasModel";
+import {NotesModel} from "../models/NotesModel";
 import {plainToClass} from "class-transformer";
 
 
@@ -33,12 +33,12 @@ export class EjemploServiceBis implements IEjemploService {
     public async obtenerTemas(): Promise<any> {
         try {
             const t: any = await getManager()
-                .createQueryBuilder(Temas, "t")
-                .addSelect("t.idTema", "id")
+                .createQueryBuilder(Notes, "t")
+                .addSelect("t.idNote", "id")
                 .addSelect("t.nombre", "nombre")
-                .addSelect("t.descripcion", "descripcion")
+                .addSelect("t.content", "descripcion")
                 .addSelect("t.duracion", "duracion")
-                .orderBy("t.idTema", "DESC")
+                .orderBy("t.idNote", "DESC")
                 .getRawMany();
 // SELECT T.id_tema as id FROM TEMAS T ORDER BY T.id;
             return t;
@@ -70,13 +70,13 @@ export class EjemploServiceBis implements IEjemploService {
         }
     }
 
-    async obtenerTemasPorSP(idTema: number): Promise<TemasModel> {
+    async obtenerTemasPorSP(idTema: number): Promise<NotesModel> {
         try {
-            let resultado: TemasModel;
+            let resultado: NotesModel;
             await getManager()
                 .query(`CALL OBT_TEMAS(${idTema})`).then(x => {
-                    let result: TemasModel;
-                    result = plainToClass(TemasModel, x[0], {
+                    let result: NotesModel;
+                    result = plainToClass(NotesModel, x[0], {
                         excludeExtraneousValues: true
                     });
                     console.error(result);

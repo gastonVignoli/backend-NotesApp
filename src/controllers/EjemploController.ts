@@ -57,7 +57,7 @@ export async function obtenerTemas(request: Request, response: Response) {
         return response.status(409).json(error)
     }
 /*
-    return response.status(200).json(await _ejemploService.obtenerTemas());
+    return response.status(200).json(await _ejemploService.getNotes());
 */
 }
 

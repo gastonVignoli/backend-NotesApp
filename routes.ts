@@ -1,5 +1,5 @@
 import {EjemploController, obtenerReparticiones} from "./src/controllers/EjemploController";
-import {TemasController} from "./src/controllers/TemasController";
+import {NotesController} from "./src/controllers/NotesController";
 import {AlumnoController} from "./src/controllers/AlumnoController";
 import {modificarPuntaje, PuntajeController} from "./src/controllers/PuntajeController";
 import {ProfesorController} from "./src/controllers/ProfesorController";
@@ -27,16 +27,16 @@ export const AppRoutes = [
     },
 // Este la ruta metodo oficial para el punto 1. ---------------
     {
-        path: '/obtenerTemas',
+        path: '/getNotes',
         method: 'get',
-        action: TemasController.obtenerTemas,
+        action: NotesController.getNotes,
     },
 // Este es la ruta oficial para el punto 2. ---------------
-    {
-        path: '/obtenerTemasPorId/:id',
-        method: 'get',
-        action: TemasController.obtenerTemasPorSP,
-    },
+//     {
+//         path: '/obtenerTemasPorId/:id',
+//         method: 'get',
+//         action: NotesController.obtenerTemasPorSP,
+//     },
 // Este es la ruta oficial para el punto 3. ---------------
 
     {
@@ -131,7 +131,7 @@ export const AppRoutes = [
     },
 
     {
-        path: '/ejemploParams/:idTema',
+        path: '/ejemploParams/:idNote',
         method: 'get',
         action: EjemploController.ejemploActionConParametros,
     },

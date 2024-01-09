@@ -2,7 +2,7 @@ import {injectable} from 'inversify';
 import {createQueryBuilder, getManager} from "typeorm";
 import {plainToClass} from "class-transformer";
 import {Profesores} from "../entities/Profesores";
-import {Temas} from "../entities/Temas";
+import {Notes} from "../entities/Notes";
 import {ProfesorModel} from "../models/ProfesorModel";
 import {Personas} from "../entities/Personas";
 import {IProfesorService} from "./interfaces/IProfesorService";

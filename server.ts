@@ -39,9 +39,9 @@ AppRoutes.forEach((route) => {
 
 // Iniciamos el servidor express
 const startServer = async () => {
-    await app.listen(process.env.PORT || 8080, () => {
+    app.listen(process.env.PORT || 8080, () => {
         console.log(
-            `Server running on http://127.0.0.1:${ process.env.PORT }`
+            `Server running on http://127.0.0.1:${process.env.PORT}`
         );
     });
 };
