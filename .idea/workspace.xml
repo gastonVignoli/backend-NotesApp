@@ -22,24 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="el error es de coneccion con la BD. Supuestamente el resto está">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ormconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ormconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="cambiado todo temas pro Notes">
       <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/EjemploController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/EjemploController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/TemasController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/NotesController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Temas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Notes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/PuntajeModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/PuntajeModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/TemasModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/NotesModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/AlumnoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AlumnoService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/EjemploServiceBis.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/EjemploServiceBis.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ProfesorService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ProfesorService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/TemaService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/NotesService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/interfaces/ITemaService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/interfaces/INotesService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/inversify.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/inversify.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +193,7 @@
       <workItem from="1704745314881" duration="1441000" />
       <workItem from="1704746781627" duration="386000" />
       <workItem from="1704747182043" duration="741000" />
-      <workItem from="1704809849397" duration="6880000" />
+      <workItem from="1704809849397" duration="7163000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;prueba commit desde WS&quot;">
       <created>1640263188879</created>
@@ -310,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704811300881</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="cambiado todo temas pro Notes">
+      <option name="closed" value="true" />
+      <created>1704816897313</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1704816897313</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,6 +350,7 @@
     <MESSAGE value="Temas: controller interfaz y servicio&#10;Profesores: Idem&#10;Puntaje: ruta dedicad apra front" />
     <MESSAGE value="un mensaje viejo de testing" />
     <MESSAGE value="el error es de coneccion con la BD. Supuestamente el resto está" />
-    <option name="LAST_COMMIT_MESSAGE" value="el error es de coneccion con la BD. Supuestamente el resto está" />
+    <MESSAGE value="cambiado todo temas pro Notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambiado todo temas pro Notes" />
   </component>
 </project>
