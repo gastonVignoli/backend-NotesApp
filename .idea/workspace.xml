@@ -22,10 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="Funciona la creacino edicion y eliminacion de notas">
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="Adaptacion minima del routejs a routets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/NotesController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/NotesController.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +196,9 @@
       <workItem from="1704746781627" duration="386000" />
       <workItem from="1704747182043" duration="741000" />
       <workItem from="1704809849397" duration="7163000" />
-      <workItem from="1704820963371" duration="10045000" />
+      <workItem from="1704820963371" duration="10237000" />
+      <workItem from="1704853351227" duration="7000" />
+      <workItem from="1704853377749" duration="295000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;prueba commit desde WS&quot;">
       <created>1640263188879</created>
@@ -313,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704830049858</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Adaptacion minima del routejs a routets">
+      <option name="closed" value="true" />
+      <created>1704831860662</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1704831860662</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,21 +373,15 @@
     <MESSAGE value="el error es de coneccion con la BD. Supuestamente el resto está" />
     <MESSAGE value="cambiado todo temas pro Notes" />
     <MESSAGE value="Funciona la creacino edicion y eliminacion de notas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funciona la creacino edicion y eliminacion de notas" />
+    <MESSAGE value="Adaptacion minima del routejs a routets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaptacion minima del routejs a routets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes.ts</url>
-          <line>10</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes.js</url>
           <line>15</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

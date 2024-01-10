@@ -49,26 +49,10 @@ export async function deleteNote(request: Request, response: Response) {
     }
 }
 
-// A partir de aca son métodos que no usamos en el front que fueron ejemplos durante la clase para entender NodeJS
-//
-// export async function obtenerTemasPorSP(request: Request, response: Response) {
-//     try {
-//         let respuesta = await _ejemploService.obtenerTemasPorSP(+request.params.id);
-//         if (respuesta) {
-//             return response.status(200).json(respuesta);
-//         } else {
-//             return response.status(404).json("No se encontraron datos");
-//         }
-//     } catch(error) {
-//         return response.status(409).json(error)
-//     }
-//     /*return response.status(200).json(await _ejemploService.obtenerTemasPorSP(+request.params.id));*/
-// }
 
 export const NotesController = {
     getNotes,
     createNote,
     updateNote,
     deleteNote,
-    // obtenerTemasPorSP,
 }

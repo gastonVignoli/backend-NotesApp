@@ -33,12 +33,7 @@ export const AppRoutes = [
         method: 'get',
         action: NotesController.deleteNote,
     },
-// Este es la ruta oficial para el punto 2. ---------------
-//     {
-//         path: '/obtenerTemasPorId/:id',
-//         method: 'get',
-//         action: NotesController.obtenerTemasPorSP,
-//     },
+
 // Este es la ruta oficial para el punto 3. ---------------
 
     {
