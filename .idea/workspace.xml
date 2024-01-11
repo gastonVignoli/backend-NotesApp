@@ -22,39 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="Limpieza">
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="cleaning..">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/AlumnoController.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/EjemploController.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/NotesController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/NotesController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ProfesorController.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/PuntajeController.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Alumnos.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Cargos.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Personas.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Profesores.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Puntajes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Reparticiones.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/User.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/AlumnoModel.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/PersonaModel.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ProfesorModel.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/PuntajeBandejaModel.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/PuntajeModel.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/AlumnoService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/EjemploService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/EjemploServiceBis.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/NotesService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/NotesService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ProfesorService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/PuntajeService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/interfaces/IAlumnoService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/interfaces/IEjemploService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/interfaces/IProfesorService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/interfaces/IPuntajeService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/inversify.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/inversify.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704853761416</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="cleaning..">
+      <option name="closed" value="true" />
+      <created>1704996447027</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1704996447028</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,17 +393,7 @@
     <MESSAGE value="Funciona la creacino edicion y eliminacion de notas" />
     <MESSAGE value="Adaptacion minima del routejs a routets" />
     <MESSAGE value="Limpieza" />
-    <option name="LAST_COMMIT_MESSAGE" value="Limpieza" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/routes.js</url>
-          <line>11</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="cleaning.." />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning.." />
   </component>
 </project>

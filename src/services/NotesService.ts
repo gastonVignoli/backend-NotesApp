@@ -38,15 +38,15 @@ export class NotesService implements INotesService {
         }
     }
 
-    public async updateNote(cuerpo: any): Promise<any> {
+    public async updateNote(body: any): Promise<any> {
         try{
             await getManager().transaction(async (transactionalEntityManager)=>{
                 await transactionalEntityManager.createQueryBuilder()
                     .update(Notes).set({
-                        title: cuerpo.title,
-                        content: cuerpo.content,
-                        archived: cuerpo.archived})
-                    .where(`id_note = ${cuerpo.idNote}`)
+                        title: body.title,
+                        content: body.content,
+                        archived: body.archived})
+                    .where(`id_note = ${body.idNote}`)
                     .execute();
             });
             return true;
@@ -56,10 +56,9 @@ export class NotesService implements INotesService {
         }
     }
 
-    public async deleteNote(idNote: number): Promise<any> {
+    public async deleteNote(idNote: number): Promise<boolean> {
         try{
             await getManager().transaction(async (transactionalEntityManager) => {
-                //elimino nota
                 await transactionalEntityManager.createQueryBuilder()
                     .delete()
                     .from(Notes)

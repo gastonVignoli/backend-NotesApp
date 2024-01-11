@@ -31,8 +31,8 @@ export async function createNote(request: Request, response: Response) {
 
 export async function updateNote(request: Request, response: Response) {
     try {
-        let cuerpo = request.body
-        return response.status(HttpStatusCode.OK).json(await _notesService.updateNote(cuerpo))
+        let payload = request.body
+        return response.status(HttpStatusCode.OK).json(await _notesService.updateNote(payload))
     } catch (e) {
         return response.sendStatus(HttpStatusCode.CONFLICT);
     }
