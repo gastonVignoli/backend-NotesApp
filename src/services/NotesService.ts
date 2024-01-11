@@ -2,10 +2,7 @@ import {injectable} from 'inversify';
 import {createQueryBuilder, getManager} from "typeorm";
 import {Notes} from "../entities/Notes";
 import {INotesService} from "./interfaces/INotesService";
-import {Alumnos} from "../entities/Alumnos";
-import {Personas} from "../entities/Personas";
-import {Reparticiones} from "../entities/Reparticiones";
-import {Puntajes} from "../entities/Puntajes";
+
 
 
 

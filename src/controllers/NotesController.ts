@@ -1,12 +1,9 @@
 // @ts-ignore
 import {Request, Response} from 'express';
-import {PersonaModel} from "../models/PersonaModel";
-import {EjemploServiceBis} from "../services/EjemploServiceBis";
 import container from "../services/inversify.config";
 import EjemploTypes from "../services/types/types";
 import {NotesService} from "../services/NotesService";
 import HttpStatusCode from "../enums/HttpStatusCode";
-import {EjemploService} from "../services/EjemploService";
 
 let _notesService = container.get<NotesService>(EjemploTypes.Note)
 
