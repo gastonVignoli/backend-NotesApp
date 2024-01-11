@@ -22,10 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="Adaptacion minima del routejs a routets">
+    <list default="true" id="bb989dda-a3cd-4a75-8e3c-44835a51ab15" name="Default Changelist" comment="Limpieza">
+      <change beforePath="$PROJECT_DIR$/.idea/App nodejs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BackendNotes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/NotesController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/NotesController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,14 +80,14 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;vignoli&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Proyectos/Challenge/capacitacion-nodejs&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Proyectos/Challenge/backend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Proyectos\\Challenge\\capacitacion-nodejs\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Proyectos\\Challenge\\backend\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -198,7 +199,11 @@
       <workItem from="1704809849397" duration="7163000" />
       <workItem from="1704820963371" duration="10237000" />
       <workItem from="1704853351227" duration="7000" />
-      <workItem from="1704853377749" duration="295000" />
+      <workItem from="1704853377749" duration="841000" />
+      <workItem from="1704854727136" duration="1912000" />
+      <workItem from="1704858493551" duration="25000" />
+      <workItem from="1704900892667" duration="3223000" />
+      <workItem from="1704980777266" duration="2637000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;prueba commit desde WS&quot;">
       <created>1640263188879</created>
@@ -323,7 +328,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704831860662</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Limpieza">
+      <option name="closed" value="true" />
+      <created>1704853761416</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1704853761416</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +387,8 @@
     <MESSAGE value="cambiado todo temas pro Notes" />
     <MESSAGE value="Funciona la creacino edicion y eliminacion de notas" />
     <MESSAGE value="Adaptacion minima del routejs a routets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaptacion minima del routejs a routets" />
+    <MESSAGE value="Limpieza" />
+    <option name="LAST_COMMIT_MESSAGE" value="Limpieza" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
